@@ -20,7 +20,7 @@ import { RepoDatePipe } from './repo-date.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
