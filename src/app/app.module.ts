@@ -8,6 +8,10 @@ import { ReposComponent } from './repos/repos.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { RepoDatePipe } from './repo-date.pipe';
+import { FormsModule } from '@angular/forms';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ import { RepoDatePipe } from './repo-date.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
