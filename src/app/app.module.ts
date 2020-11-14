@@ -9,9 +9,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { RepoDatePipe } from './repo-date.pipe';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [

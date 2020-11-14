@@ -6,6 +6,7 @@ import { UserComponent } from './user/user.component';
 const routes: Routes = [
   { path: 'user', component: UserComponent },
   { path: 'repos', component: ReposComponent },
+  { path: '', redirectTo: '/user-profile', pathMatch: 'full'}
 ];
 
 @NgModule({

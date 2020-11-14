@@ -46,7 +46,7 @@ export class GithubService {
   getRepository(searchRepo: string) {
 
     interface apiResponse{
-      url: string;
+      name: string;
       description: string;
       language: string;
       html_url: string;

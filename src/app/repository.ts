@@ -1,6 +1,6 @@
 export class Repository {
   constructor(
-    public url: string,
+    public name: string,
     public description: string,
     public language: string,
     public html_url: string,

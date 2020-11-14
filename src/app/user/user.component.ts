@@ -30,7 +30,7 @@ export class UserComponent implements OnInit {
     this.ssearch.getRepository(name).then(
       (grant) => {
         this.repos = this.ssearch.repos;
-        console.log(grant);
+        console.log(this.repos);
       },
       (error) => {
         console.log(error);

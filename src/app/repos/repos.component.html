@@ -1,1 +1,31 @@
-<p>repos works!</p>
+<div class="container-fluid mt-5">
+    <!-- <div class="justify-content-center">
+        <app-find-form (searchOutput)="repoSearch($event)"></app-find-form>
+    </div> -->
+    <div class="container mt-5">
+        <div class="container justify-content-center row">
+            <div class="card col-3 m-2" *ngFor="let repository of rep" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{repository.name}} </h5>
+                    <div class="card-text">
+                        <hr>
+                        <div><span>Description:</span> {{repository.description}}
+                        </div>
+                        <hr>
+                        <div class="mb-2">
+                            <span>Language: </span> {{repository.language}}
+                        </div>
+                        <div class="card-subtitle mb-2"><span class="top">Created On:</span> {{repository.created_at | date}}
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group" role="group" aria-label="Third group">
+                        <button class="btn btn-sm btn-success"><a href="{{repository.html_url}}"
+                class="card-link">View</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
