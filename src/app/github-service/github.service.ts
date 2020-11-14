@@ -16,7 +16,7 @@ export class GithubService {
     this.findUser = new User('', '', '', 0, 0, 0, '', new Date());
     this.repos = new Repository('', '', '', '', new Date());
   }
-  
+
   searchUser(searchUsername: string) {
     interface apiResponse {
       name: string;

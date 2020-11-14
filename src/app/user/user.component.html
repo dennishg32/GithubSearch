@@ -1,4 +1,7 @@
 <div class="container user">
+    <div id="rotate">
+        <app-search-form (searched)="makeSearch($event)"></app-search-form>
+    </div>
     <div class="row justify-content-center coo">
         <div class="col-md-4">
             <img src="{{user.avatar_url}}" alt="">
@@ -20,11 +23,9 @@
             <p class="user-followers">
                 Followers:&nbsp;{{user.followers}}&nbsp;&nbsp;Following:&nbsp;{{user.following}}
             </p>
-            <!--             <p class="user-date">
-                Created on:&nbsp;&nbsp;{{user.created_at|date}}
-            </p> -->
+            <p class="user-date">
+                Created on:&nbsp;&nbsp;{{user.createdDate| date}}
+            </p>
         </div>
-
-
     </div>
 </div>

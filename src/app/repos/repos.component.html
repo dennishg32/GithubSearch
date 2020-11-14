@@ -15,14 +15,14 @@
                         <div class="mb-2">
                             <span>Language: </span> {{repository.language}}
                         </div>
-                        <div class="card-subtitle mb-2"><span class="top">Created On:</span> {{repository.created_at | date}}
+                        <div class="card-subtitle mb-2"><span class="top">Created On:</span> {{repository.updated_at | date}}
                         </div>
                     </div>
                 </div>
                 <div class="card-footer">
                     <div class="btn-group" role="group" aria-label="Third group">
                         <button class="btn btn-sm btn-success"><a href="{{repository.html_url}}"
-                class="card-link">View</a> </button>
+                class="card-link">Visit Github Repo</a> </button>
                     </div>
                 </div>
             </div>
