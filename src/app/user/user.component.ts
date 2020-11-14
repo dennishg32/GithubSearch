@@ -3,7 +3,7 @@ import { Repository } from '../repository';
 import { User } from '../user';
 import { GithubService } from '../github-service/github.service';
 import { HttpClient } from '@angular/common/http';
-import { error } from 'protractor';
+
 
 @Component({
   selector: 'app-user',

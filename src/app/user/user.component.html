@@ -1,1 +1,30 @@
-<p>user works!</p>
+<div class="container user">
+    <div class="row justify-content-center coo">
+        <div class="col-md-4">
+            <img src="{{user.avatar_url}}" alt="">
+        </div>
+        <div class="col-md-6" id="users">
+
+            <p class="user-name">
+                {{user.name}}
+            </p>
+            <p class="user-login">
+                <span id="title">Username:</span>&nbsp;&nbsp;{{user.login}}
+            </p>
+            <p class="user-repo">
+                Repositories: {{user.pub_repos}}
+            </p>
+            <p class="user-location">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;{{user.location}}
+            </p>
+            <p class="user-followers">
+                Followers:&nbsp;{{user.followers}}&nbsp;&nbsp;Following:&nbsp;{{user.following}}
+            </p>
+            <!--             <p class="user-date">
+                Created on:&nbsp;&nbsp;{{user.created_at|date}}
+            </p> -->
+        </div>
+
+
+    </div>
+</div>

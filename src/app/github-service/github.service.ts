@@ -19,7 +19,7 @@ export class GithubService {
   
   searchUser(searchUsername: string) {
     interface apiResponse {
-      url: string;
+      name: string;
       login: string;
       location: string;
       pub_repos: number;

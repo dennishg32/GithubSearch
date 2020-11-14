@@ -1,6 +1,6 @@
 export class User {
   constructor(
-    public url: string,
+    public name: string,
     public login: string,
     public location: string,
     public pub_repos: number,
