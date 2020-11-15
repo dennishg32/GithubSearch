@@ -15,7 +15,7 @@
                 <span id="title">Username:</span>&nbsp;&nbsp;{{user.login}}
             </p>
             <p class="user-repo">
-                Repositories: {{user.pub_repos}}
+                Repositories: {{user.public_repos}}
             </p>
             <p class="user-location">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;{{user.location}}
@@ -24,8 +24,9 @@
                 Followers:&nbsp;{{user.followers}}&nbsp;&nbsp;Following:&nbsp;{{user.following}}
             </p>
             <p class="user-date">
-                Created on:&nbsp;&nbsp;{{user.createdDate| date}}
+                Created on:&nbsp;&nbsp;{{user.created_at|repoDate}}
             </p>
+
         </div>
     </div>
 </div>
