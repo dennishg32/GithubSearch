@@ -1,29 +1,21 @@
 <div class="container-fluid mt-5">
-    <div id="rotate">
+    <div id="rrepo">
         <app-search-form (searched)="reposearch($event)"></app-search-form>
     </div>
     <div class="container mt-5">
-        <div class="container justify-content-center row">
+        <div class="container justify-content-center row" id="myview">
             <div class="card col-3 m-2" appHighlight *ngFor="let repository of rep" style="width: 22rem;">
                 <div class="card-body">
-                    <h5 class="card-title">{{repository.name}} </h5>
+                    <h5 class="title">{{repository.name}} </h5>
                     <div class="card-text">
                         <hr>
-                        <div><span>Description:</span> {{repository.description}}
-                        </div>
+                        <span>Description:</span> {{repository.description}}
                         <hr>
-                        <div class="mb-2">
-                            <span>Language: </span> {{repository.language}}
-                        </div>
-                        <div class="card-subtitle mb-2"><span class="top">Last update On:</span> {{repository.updated_at | repoDate}}
-                        </div>
+                        <span>Language: </span> {{repository.language}}&nbsp;&nbsp;{{repository.updated_at | repoDate}}
                     </div>
                 </div>
-                <div class="card-footer">
-                    <div class="btn-group" role="group" aria-label="Third group">
-                        <button class="btn btn-sm btn-success"><a href="{{repository.html_url}}"
-                class="card-link">Visit Github Repo</a> </button>
-                    </div>
+                <div class="card-footer" id="btn">
+                    <button class="btn btn btn-success"><a href="{{repository.html_url}}">Visit Repo</a></button>
                 </div>
             </div>
         </div>

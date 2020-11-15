@@ -8,7 +8,7 @@
                 <img src="{{user.avatar_url}}" alt="Avatar" class="image">
             </div>
         </div>
-        <div class="col-md-6" id="users">
+        <div class="col-md-6" id="look">
 
             <p class="username">
                 {{user.name}}
@@ -23,12 +23,13 @@
             </p>
             <p><strong>Followers:</strong> {{user.followers}}&nbsp; <strong>Following:</strong> {{user.following}}
             </p>
-            <p> <strong>Created on:</strong> {{user.created_at| date}}
+            <p> <strong>Created on:</strong> {{user.created_at | date}}
             </p>
 
         </div>
         <div class="btn">
             <button class="btn btn-success"><a href="{{user.html_url}}">Visit GitHub</a></button>
+
         </div>
     </div>
 </div>
