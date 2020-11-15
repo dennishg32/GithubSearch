@@ -1,0 +1,15 @@
+#navbarToggler {
+    background-color: rgb(60, 133, 32);
+}
+
+nav {
+    background-color: rgb(60, 133, 32);
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: rgb(19, 19, 17);
+}
