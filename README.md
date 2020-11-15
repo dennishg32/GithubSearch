@@ -11,7 +11,7 @@ Here is a working git live page online demo: https://dennishg32.github.io/Github
 
 Currently as you can see there is picture of landing page.
 
-<img src="" width="auto">
+<img src="https://github.com/dennishg32/GithubSearch/blob/master/src/assets/Screenshot%20from%202020-11-15%2014-22-57.png" width="auto">
 
 ## Built with
 
