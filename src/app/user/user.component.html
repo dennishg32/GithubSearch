@@ -9,7 +9,6 @@
             </div>
         </div>
         <div class="col-md-6" id="look">
-
             <p class="username">
                 {{user.name}}
             </p>
@@ -30,6 +29,26 @@
         <div class="btn">
             <button class="btn btn-success"><a href="{{user.html_url}}">Visit GitHub</a></button>
 
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h1 class="ttle">List of Repositories</h1>
+        <hr>
+        <div class="container justify-content-center row">
+            <div class="card col-3 m-2" appHighlight *ngFor="let repository of repos" style="width: 22rem;">
+                <div class="card-body">
+                    <h5 class="title">{{repository.name}} </h5>
+                    <div class="card-text">
+                        <hr>
+                        <span>Description:</span> {{repository.description}}
+                        <hr>
+                        <span>Language: </span> {{repository.language}}&nbsp;&nbsp;{{repository.updated_at | repoDate}}
+                    </div>
+                </div>
+                <div class="card-footer" id="btn">
+                    <button class="btn btn btn-success"><a href="{{repository.html_url}}">Visit Repo</a></button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
