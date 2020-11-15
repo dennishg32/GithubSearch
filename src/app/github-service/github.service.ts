@@ -12,7 +12,7 @@ export class GithubService {
   repos: Repository;
 
   constructor(private http: HttpClient) {
-    this.findUser = new User('', '', '', 0, 0, 0, '', new Date());
+    this.findUser = new User('', '', '', 0, 0, 0, '', new Date(), '');
     this.repos = new Repository('', '', '', '', new Date());
   }
 
@@ -26,6 +26,7 @@ export class GithubService {
       following: number;
       avatar_url: string;
       created_at: Date;
+      html_url: string,
     }
     return new Promise((resolve, reject) => {
       this.http

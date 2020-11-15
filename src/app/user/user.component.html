@@ -2,31 +2,33 @@
     <div id="rotate">
         <app-search-form (searched)="makeSearch($event)"></app-search-form>
     </div>
-    <div class="row justify-content-center coo">
+    <div class="row justify-content-center hg">
         <div class="col-md-4">
-            <img src="{{user.avatar_url}}" alt="">
+            <div class="container">
+                <img src="{{user.avatar_url}}" alt="Avatar" class="image">
+            </div>
         </div>
         <div class="col-md-6" id="users">
 
-            <p class="user-name">
+            <p class="username">
                 {{user.name}}
             </p>
-            <p class="user-login">
-                <span id="title">Username:</span>&nbsp;&nbsp;{{user.login}}
+            <p>
+                <span><strong>Username:</strong> </span> {{user.login}}
             </p>
-            <p class="user-repo">
-                Repositories: {{user.public_repos}}
+            <p><strong>Repositories:</strong> {{user.public_repos}}
             </p>
-            <p class="user-location">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;{{user.location}}
+            <p>
+                <i class="fa fa-map-marker" id="fa" aria-hidden="true"></i>&nbsp;{{user.location}}
             </p>
-            <p class="user-followers">
-                Followers:&nbsp;{{user.followers}}&nbsp;&nbsp;Following:&nbsp;{{user.following}}
+            <p><strong>Followers:</strong> {{user.followers}}&nbsp; <strong>Following:</strong> {{user.following}}
             </p>
-            <p class="user-date">
-                Created on:&nbsp;&nbsp;{{user.created_at| date}}
+            <p> <strong>Created on:</strong> {{user.created_at| date}}
             </p>
 
+        </div>
+        <div class="btn">
+            <button class="btn btn-success"><a href="{{user.html_url}}">Visit GitHub</a></button>
         </div>
     </div>
 </div>

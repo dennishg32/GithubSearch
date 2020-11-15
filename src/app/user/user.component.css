@@ -1,82 +1,35 @@
-@import '~font-awesome/css/font-awesome.css';
 img {
-    height: 380px;
-    shape-outside: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    border-radius: 20%;
 }
 
 #users {
-    /* margin-left: 20px; */
     padding-left: 150px;
-    margin-top: 70px;
-    font-family: 'Goldman', cursive;
+    margin-top: 60px;
 }
 
-.user-name {
-    font-family: 'Amatic SC', cursive;
-    font-size: 60px;
+.username {
+    font-size: 40px;
     font-weight: bold;
+    color: green;
+}
+
+#fa {
+    color: green;
 }
 
 .user-login {
-    font-family: 'Big Shoulders Stencil Text', cursive;
     font-size: 20px;
 }
 
-#title {
-    font-family: 'Goldman', cursive;
+.hg {
+    margin-top: 70px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px 10px #888888;
+    background: rgb(252, 252, 252);
 }
 
-.title {
-    font-family: 'Permanent Marker', cursive;
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.tot {
-    width: 35%;
-}
-
-#nam {
-    font-family: 'Amatic SC', cursive;
-    font-size: 30px;
-    color: rgb(255, 153, 51);
-    text-shadow: 0 1px 0 rgb(255, 153, 51);
-}
-
-#lang {
-    font-size: 12px;
-}
-
-.coo {
-    background: rgb(247, 243, 243);
-    box-shadow: -8px 4px 8px -4px rgba(104, 104, 104, 0.63);
-}
-
-#link {
-    color: black;
-}
-
-.rep {
-    background: rgb(250, 249, 249);
-}
-
-.collapsed .repositories {
-    display: none;
-}
-
-.animate__animated.animate__bounce {
-    --animate-duration: 30s;
-}
-
-.fa-chevron-circle-down {
-    color: rgb(255, 153, 51);
-}
-
-#des {
-    font-family: 'Big Shoulders Inline Display', cursive;
-    color: black;
-    font-size: 18px;
+.btn a {
+    color: ivory;
+    text-decoration: none;
 }
