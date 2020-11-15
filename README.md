@@ -1,27 +1,51 @@
 # GithubSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## Description
 
-## Development server
+This is web application for Github search where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Here is a working git live page online demo: https://dennishg32.github.io/GithubSearch
 
-## Code scaffolding
+## Landing Page
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Currently as you can see there is picture of landing page.
 
-## Build
+<img src="" width="auto">
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Built with
 
-## Running unit tests
+- [HTML](https://www.w3schools.com/html) - is the most basic building block of the Web. It defines the meaning and structure of web content.
+- [CSS](https://www.w3schools.com/css) - is the language we use to style an HTML document.
+- [ANGULAR](https://angular.io/) -  is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.
+- [BOOTSTRAP](https://getbootstrap.com/) - Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Setup/Installation Requirements
 
-## Running end-to-end tests
+To access this website you must have
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Internet access
+- Browser (chrome, safari, firefox)
 
-## Further help
+## BDD
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- User will see a list of repositories on landing page and information about the user
+- User will search by using username and see the information on github
+- User will search repo using username
+- User will be able to visit any choice of repo
+- User will have an option to visit account of username he/she searched
+
+## Known Bugs
+
+If you find a bug, kindly open an issue [here](https://github.com/dennishg32/GithubSearch/issues) by including your search and the expected result.
+
+## Author
+
+| Denys HAGANJE                                                                                      |
+| -------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/dennishg32/webAssignment/blob/master/images/denys.jpg" width="250px"> |
+
+### License
+
+MIT © [Denys HAGANJE](https://github.com/dennishg32)
+Copyright © 2020
