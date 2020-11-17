@@ -1,11 +1,12 @@
 <div class="container user">
+    <ng-progress></ng-progress>
     <div id="rotate">
         <app-search-form (searched)="makeSearch($event)"></app-search-form>
     </div>
     <div class="row justify-content-center hg">
         <div class="col-md-4">
             <div class="container">
-                <img src="{{user.avatar_url}}" alt="Avatar" class="image">
+                <img src="{{user.avatar_url}}" class="image">
             </div>
         </div>
         <div class="col-md-6" id="look">

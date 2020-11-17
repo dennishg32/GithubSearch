@@ -26,7 +26,7 @@ export class GithubService {
       following: number;
       avatar_url: string;
       created_at: Date;
-      html_url: string,
+      html_url: string;
     }
     return new Promise((resolve, reject) => {
       this.http
