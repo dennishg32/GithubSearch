@@ -27,8 +27,8 @@ import { HighlightDirective } from './highlight.directive';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgProgressModule.forRoot(),
-    NgProgressHttpClientModule,
+    // NgProgressModule.forRoot(),
+    // NgProgressHttpClientModule,
     FormsModule
   ],
   providers: [],
